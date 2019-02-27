@@ -1,0 +1,59 @@
+=createIcon($imageName, $variants: 1)
+	
+	&,
+	&.icon--style-default
+		+imgBackground($imageName)
+
+	@if ($variants >= 2)
+		+svgBgSprite($imageName)
+
+.icon
+	outline: none
+	border: none
+	padding: 0
+	font-size: initial
+	display: inline-block
+	background-size: contain
+	background-repeat: no-repeat
+	background-position: center center
+	color: transparent !important
+
+	&:hover
+		color: transparent !important
+
+	&--size-large
+		width: 3em
+		height: 3em
+
+	&--logo
+		+createIcon('logo')
+	
+	&--avatar
+		+createIcon('avatar')
+
+	&--arrow-down
+		+createIcon('arrow-down')
+	
+	&--sprite-application
+		+createIcon('application', 3)
+	
+	&--sprite-services
+		+createIcon('services', 3)
+	
+	&--sprite-devices
+		+createIcon('devices', 3)
+
+	&--sprite-reldevices
+		+createIcon('devices-relationships', 3)
+	
+	&--arrow-left
+		+createIcon('arrow-left')
+	
+	&--arrow-right
+		+createIcon('arrow-right')
+
+	&--pen
+		+createIcon(pen)
+		
+	&--rubbish
+		+createIcon(rubbish)

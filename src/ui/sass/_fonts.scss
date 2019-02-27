@@ -1,0 +1,18 @@
+$fontPath: '../fonts/' !default;
+
+/* Effra */
+@font-face {
+    font-family: 'Effra';
+    src: url('#{$fontPath}Effra.woff2') format('woff2'),
+         url('#{$fontPath}Effra.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Effra';
+    src: url('#{$fontPath}Effra-Medium.woff2') format('woff2'),
+         url('#{$fontPath}Effra-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}

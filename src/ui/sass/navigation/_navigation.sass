@@ -1,0 +1,41 @@
+$colorActive: rgb(91,83,142)
+
+.navigation
+    background-color: $colorWhite
+    width: 320px
+    bottom: 0
+    position: fixed
+    top: 0
+    
+    &__item
+        display: flex
+        align-items: center
+        height: 70px
+        padding-left: $gutter
+        color: $colorFont--1
+        cursor: pointer
+        &:nth-child(1)
+            margin-top: $headerHeight
+        &--active
+            background-color: $colorGray--1
+            color: $colorActive 
+            position: relative
+            &::before
+                content: ''
+                position: absolute
+                left: 0
+                width: 6px
+                height: 100%
+                background-color: $colorActive
+            .navigation__icon
+                .svgicon
+                    stroke: $colorActive
+                           
+    &__icon
+        width: 32px
+        height: 32px
+    &__text
+        margin-left: 32px
+        font-size: 16px
+        font-weight: 600
+        

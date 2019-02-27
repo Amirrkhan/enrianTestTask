@@ -1,0 +1,37 @@
+.header
+    width: 100%
+    background-color: $colorWhite
+    height: $headerHeight
+    justify-content: space-between
+    display: flex
+    z-index: 10
+    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75)
+    position: fixed
+    &__item
+        display: flex
+        align-items: center
+        height: 100%
+    &__logo
+        width: 320px 
+        background-color: $colorSecondary
+        .icon
+            margin-right: 0.5em
+            margin-left: $gutter
+    
+    &__user
+        width: 197px
+        margin-right: 54px
+        > span, div:not(:last-child)
+            margin-right: 17px
+        .header__text
+            width: 99px
+            text-align: right
+       
+
+    &__text
+        font-size: 14px
+        font-weight: 500
+        color: $colorFont--1
+        
+    .icon, .header__text
+        cursor: pointer

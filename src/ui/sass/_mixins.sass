@@ -1,0 +1,15 @@
+=transition
+	transition: all $transitionDuration ease-in-out
+
+@function image($imgName)
+	@return url('#{$imgPath}#{$imgName}')
+
+@function imageSvgSprite($imgName)
+  @return url('#{$imgSvgSpritePath}#{$imgName}')
+
+=imgBackground($imgName)
+	background-image: image('#{$imgName}.png')
+	background-image: image('#{$imgName}.svg'), none
+
+=svgBgSprite($imgName)
+  background-image: imageSvgSprite('#{$imgName}')

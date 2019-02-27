@@ -1,0 +1,52 @@
+.input
+	position: relative
+	display: block
+	border-radius: $borderRadius
+	background-color: $colorWhite
+	margin-top: $gutter
+	+transition
+
+	&__field
+		font-family: $fontFamily
+		font-size: $fontSize
+		display: block
+		box-sizing: border-box
+		width: inherit
+		height: $inputHeight
+		background-color: transparent
+		border: 1px solid $colorGray--2
+		border-radius: $borderRadius
+		+transition
+		
+		&:focus
+			border-color: 
+			border: 2px solid $colorFont--3  
+		
+
+		&--lefticon
+			padding-left: 2em
+			padding-right: 0.5em
+
+		&--bothicons
+			padding-left: 2em
+		
+		&--search
+			padding-left: 2.5em
+	&__label
+		color: $colorFont--2
+		font-weight: 600
+
+	&--small
+		width: $inputWidth--small
+		&:not(:first-child)
+			margin-left: 16px
+	&--big
+		width: $inputWidth--big
+
+	select
+		-webkit-appearance: none
+		background-size: auto $gutter
+		background-position: right center
+		background-repeat: no-repeat
+
+

@@ -1,0 +1,101 @@
+.myTable
+    &__header
+        display: flex
+        height: 80px
+        justify-content: space-between
+        align-items: center
+        padding: 0 30px
+    &__eclipse
+        width: 46px
+        height: 46px
+        background-color: #C4C4C4
+        border-radius: 50%
+    &__name
+        display: flex
+        align-items: center
+    &__text
+        margin-left: 16px
+    
+    &--application
+        .ReactTable
+            .rt
+                &-tbody
+                    .rt-tr
+                        .rt-td
+                            .icon
+                                visibility: hidden
+                                +transition
+                        &:hover
+                            .rt-td
+                                .icon
+                                    visibility: visible
+                                    +transition
+            .rt-thead
+                .rt-tr
+                    .rt-th
+                        display: flex
+                        align-items: center
+                    
+            .pagination-bottom
+                display: flex
+                justify-content: space-around    
+    
+    &__pagination
+        display: flex
+        height: 96px
+        padding: 0 auto
+        align-items: center
+    &__prev, &__next
+        width: 32px
+        height: 32px
+        border: 1px solid #E9EAF2
+        box-sizing: border-box
+        background-size: initial
+            
+        button
+            background-color: none
+            padding: 0
+   
+        
+    &__visiblePagesWrapper
+        margin: 0 $gutter
+        width: 127px
+        height: 32px
+        display: flex
+        justify-content: center
+        button
+            background-color: #fff
+            border: none
+            font-size: 16px
+            font-weight: 600
+            
+            
+
+    
+    .ReactTable
+        .rt
+            &-tr
+                height: 60px
+                border-bottom: 1px solid #E9EAF2
+            &-thead.-header
+                box-shadow: none
+            &-th
+                color: #989898
+                text-transform: uppercase
+
+            &-td
+                color: $colorFont--2
+                &:first-child
+                    color: $colorFont--3
+            &-tbody
+                .rt-tr
+                    align-items: center
+                    &:hover
+                        background-color: #F2F3F9
+                        cursor: pointer
+            &-th, &-tr
+                text-align: left
+                padding-left: 32px
+                    
+
+                
